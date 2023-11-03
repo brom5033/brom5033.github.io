@@ -10,12 +10,14 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@commitlint/config-conventional": "^18.1.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.9.1",
@@ -27,6 +29,7 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "husky": "^8.0.3",
     "prettier": "^3.0.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
