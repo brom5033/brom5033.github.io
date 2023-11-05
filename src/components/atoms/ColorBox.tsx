@@ -18,6 +18,6 @@ export const ColorBox: FC<Props> = ({ children, purple, border }) => {
       border: border ? '1px solid #DED0F2' : '',
     },
   };
-  // eslint-disable-next-line react/react-in-jsx-scope
+
   return <Box style={style.boxColor}>{children}</Box>;
 };
