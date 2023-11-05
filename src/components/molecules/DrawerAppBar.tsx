@@ -20,7 +20,10 @@ interface Props {
 }
 
 const drawerWidth = 240;
-const navItems = ['소개', '보유기술', '이력', '블로그'];
+const navItems = [
+  { menuName: 'github', src: 'https://github.com/brom5033' },
+  { menuName: 'notion', src: 'https://gaudy-baryonyx-7e4.notion.site/Link-18bb1ee21c4f4dfc91fbf4575033ff96?pvs=4' },
+];
 
 export const DrawerAppBar: FC<Props> = ({ window }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -49,12 +52,17 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
             component="div"
             sx={{ color: 'white', flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
           >
-            SeokHyun Jang
+            Minjeong Park
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+              <Button
+                key={item.menuName}
+                href={item.src}
+                target="_blank"
+                sx={{ color: '#fff', border: '1px solid white', marginLeft: '8px' }}
+              >
+                {item.menuName}
               </Button>
             ))}
           </Box>
@@ -76,14 +84,14 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
         >
           <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
             <Typography variant="h5" sx={{ my: 2 }}>
-              SeokHyun Jang
+              Minjeong Park
             </Typography>
             <Divider />
             <List>
               {navItems.map((item) => (
-                <ListItem key={item} disablePadding>
-                  <ListItemButton sx={{ textAlign: 'center' }}>
-                    <ListItemText primary={item} />
+                <ListItem key={item.menuName} disablePadding component="a" href={item.src} target="_blank">
+                  <ListItemButton sx={{ textAlign: 'center', color: 'black' }}>
+                    <ListItemText primary={item.menuName} />
                   </ListItemButton>
                 </ListItem>
               ))}
