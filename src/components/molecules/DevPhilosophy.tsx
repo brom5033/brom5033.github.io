@@ -1,8 +1,6 @@
 import { Grid, Stack } from '@mui/material';
 import { GlassCard } from '@components/atoms/GlassCard';
-import AutoFixHighIcon from '@mui/icons-material/AutoFixHigh';
-import RuleIcon from '@mui/icons-material/Rule';
-import BuildIcon from '@mui/icons-material/Build';
+import { AutoFixHigh, Rule, Build } from '@mui/icons-material';
 
 export const DevPhilosophy = () => {
   return (
@@ -13,7 +11,7 @@ export const DevPhilosophy = () => {
             <GlassCard>
               <h2 style={{ color: '#f7e057' }}>
                 <span style={{ marginRight: '8px' }}>
-                  <AutoFixHighIcon />
+                  <AutoFixHigh />
                 </span>
                 Commit Rule
               </h2>
@@ -26,9 +24,9 @@ export const DevPhilosophy = () => {
             <GlassCard>
               <h2 style={{ color: '#f7e057' }}>
                 <span style={{ marginRight: '8px' }}>
-                  <RuleIcon />
+                  <Rule />
                 </span>
-                Coding Conventions
+                컨벤션
               </h2>
               <p>코드는 항상 명사로 작성해야해요</p>
               <p>같은 관심사끼리 묶어야해요 </p>
@@ -39,7 +37,7 @@ export const DevPhilosophy = () => {
             <GlassCard>
               <h2 style={{ color: '#f7e057' }}>
                 <span style={{ marginRight: '8px' }}>
-                  <BuildIcon />
+                  <Build />
                 </span>
                 Refactoring
               </h2>

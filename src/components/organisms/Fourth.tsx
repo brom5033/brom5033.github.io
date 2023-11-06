@@ -1,8 +1,9 @@
 import { useState, type SyntheticEvent } from 'react';
-import { Stack, Box, Tabs, Tab, Grid } from '@mui/material';
+import { Stack, Box, Tabs, Tab } from '@mui/material';
 import { ColorSection } from '@components/atoms/ColorSection';
 import { CustomTabPanel } from '@components/molecules/CustomTabpanel';
 import { DevPhilosophy } from '@components/molecules/DevPhilosophy';
+import { CultureFit } from '@components/molecules/CultureFit';
 
 const a11yProps = (index: number) => {
   return {
@@ -46,8 +47,8 @@ export const Fourth = () => {
           <CustomTabPanel value={value} index={0} style={{ minHeight: '800px' }}>
             <DevPhilosophy />
           </CustomTabPanel>
-          <CustomTabPanel value={value} index={1} style={{ minHeight: '800px' }}>
-            중요하게 생각하는 점,
+          <CustomTabPanel value={value} index={1} style={{ minHeight: '800px', maxWidth: '873px', width: '100%' }}>
+            <CultureFit />
           </CustomTabPanel>
           <CustomTabPanel value={value} index={2} style={{ minHeight: '800px' }}>
             관심사 기타
