@@ -4,6 +4,7 @@ import { ColorSection } from '@components/atoms/ColorSection';
 import { CustomTabPanel } from '@components/molecules/CustomTabpanel';
 import { DevPhilosophy } from '@components/molecules/DevPhilosophy';
 import { CultureFit } from '@components/molecules/CultureFit';
+import { Interests } from '@components/molecules/Interests';
 
 const a11yProps = (index: number) => {
   return {
@@ -50,8 +51,8 @@ export const Fourth = () => {
           <CustomTabPanel value={value} index={1} style={{ minHeight: '800px', maxWidth: '873px', width: '100%' }}>
             <CultureFit />
           </CustomTabPanel>
-          <CustomTabPanel value={value} index={2} style={{ minHeight: '800px' }}>
-            관심사 기타
+          <CustomTabPanel value={value} index={2} style={{ minHeight: '800px', maxWidth: '873px', width: '100%' }}>
+            <Interests />
           </CustomTabPanel>
         </Stack>
       </div>
