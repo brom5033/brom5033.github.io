@@ -26,6 +26,14 @@ const navItems = [
   { menuName: 'email', src: 'mailto:eslint@icloud.com' },
 ] as const;
 
+const style = {
+  button: {
+    color: '#fff',
+    border: '1px solid white',
+    marginLeft: '8px',
+  },
+} as const;
+
 export const DrawerAppBar: FC<Props> = ({ window }) => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
@@ -57,12 +65,7 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button
-                key={item.menuName}
-                href={item.src}
-                target="_blank"
-                sx={{ color: '#fff', border: '1px solid white', marginLeft: '8px' }}
-              >
+              <Button key={item.menuName} href={item.src} target="_blank" sx={style.button}>
                 {item.menuName}
               </Button>
             ))}
