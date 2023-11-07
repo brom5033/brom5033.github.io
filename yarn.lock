@@ -310,12 +310,28 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@emotion/is-prop-valid@npm:^0.8.2":
+  version: 0.8.8
+  resolution: "@emotion/is-prop-valid@npm:0.8.8"
+  dependencies:
+    "@emotion/memoize": "npm:0.7.4"
+  checksum: e85bdeb9d9d23de422f271e0f5311a0142b15055bb7e610440dbf250f0cdfd049df88af72a49e2c6081954481f1cbeca9172e2116ff536b38229397dfbed8082
+  languageName: node
+  linkType: hard
+
 "@emotion/is-prop-valid@npm:^1.2.1":
   version: 1.2.1
   resolution: "@emotion/is-prop-valid@npm:1.2.1"
   dependencies:
     "@emotion/memoize": "npm:^0.8.1"
   checksum: fe231c472d38b3bbe519bcc9a5585cd41c45604147f3a065e333caf0f695d668aa21bc4229e657c1b6ea7398e096899e6ad54662548c73f11f6ba594aebd76a1
+  languageName: node
+  linkType: hard
+
+"@emotion/memoize@npm:0.7.4":
+  version: 0.7.4
+  resolution: "@emotion/memoize@npm:0.7.4"
+  checksum: 4e3920d4ec95995657a37beb43d3f4b7d89fed6caa2b173a4c04d10482d089d5c3ea50bbc96618d918b020f26ed6e9c4026bbd45433566576c1f7b056c3271dc
   languageName: node
   linkType: hard
 
@@ -2672,6 +2688,27 @@ __metadata:
   languageName: node
   linkType: hard
 
+"framer-motion@npm:^10.16.4":
+  version: 10.16.4
+  resolution: "framer-motion@npm:10.16.4"
+  dependencies:
+    "@emotion/is-prop-valid": "npm:^0.8.2"
+    tslib: "npm:^2.4.0"
+  peerDependencies:
+    react: ^18.0.0
+    react-dom: ^18.0.0
+  dependenciesMeta:
+    "@emotion/is-prop-valid":
+      optional: true
+  peerDependenciesMeta:
+    react:
+      optional: true
+    react-dom:
+      optional: true
+  checksum: 1ef5e1f4444316e531ea4c1c23f1ce01379fe59a29e859f865d8307fbda5f88cb0c54619f8a1d28b372309813271b92e67d2f5984ea0e64308245da47f2a617b
+  languageName: node
+  linkType: hard
+
 "fs-extra@npm:^11.0.0":
   version: 11.1.1
   resolution: "fs-extra@npm:11.1.1"
@@ -4395,6 +4432,7 @@ __metadata:
     eslint-plugin-react: "npm:^7.33.2"
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.3"
+    framer-motion: "npm:^10.16.4"
     husky: "npm:^8.0.3"
     prettier: "npm:^3.0.3"
     react: "npm:^18.2.0"
@@ -5277,7 +5315,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"tslib@npm:^2.5.0, tslib@npm:^2.6.0":
+"tslib@npm:^2.4.0, tslib@npm:^2.5.0, tslib@npm:^2.6.0":
   version: 2.6.2
   resolution: "tslib@npm:2.6.2"
   checksum: bd26c22d36736513980091a1e356378e8b662ded04204453d353a7f34a4c21ed0afc59b5f90719d4ba756e581a162ecbf93118dc9c6be5acf70aa309188166ca

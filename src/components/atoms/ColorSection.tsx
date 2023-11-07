@@ -12,11 +12,13 @@ export const ColorSection: FC<Props> = ({ children, color }) => {
       component="section"
       sx={{
         display: 'table',
+        position: 'relative',
         backgroundColor: color,
         color: 'white',
         height: '100vh',
         justifyContent: 'center',
         textAlign: 'center',
+        overflow: 'hidden',
         '& > *': {
           display: 'table-cell',
           verticalAlign: 'middle',
