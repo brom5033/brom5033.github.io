@@ -5,7 +5,7 @@
 ## Requirement
 
 ```
-typescript+swc, react, vite,  ESLint, prettier, commitLint, husky, emotion
+typescript+swc, react, vite,  ESLint, prettier, commitLint, husky, emotion, framer-motion
 ```
 
 ## How to run?
