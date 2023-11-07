@@ -10,6 +10,14 @@ const a11yProps = (index: number) => {
   };
 };
 
+const style = {
+  minW800: { minHeight: '800px' },
+  tabPanel: {
+    maxWidth: '873px',
+    width: '100%',
+  },
+} as const;
+
 export const Fourth = () => {
   const [value, setValue] = useState(0);
 
@@ -42,13 +50,13 @@ export const Fourth = () => {
               <Tab label="관심사/기타" {...a11yProps(2)} sx={{ color: 'white' }} />
             </Tabs>
           </Box>
-          <CustomTabPanel value={value} index={0} style={{ minHeight: '800px' }}>
+          <CustomTabPanel value={value} index={0} style={style.minW800}>
             <DevPhilosophy />
           </CustomTabPanel>
-          <CustomTabPanel value={value} index={1} style={{ minHeight: '800px', maxWidth: '873px', width: '100%' }}>
+          <CustomTabPanel value={value} index={1} style={Object.assign({}, style.minW800, style.tabPanel)}>
             <CultureFit />
           </CustomTabPanel>
-          <CustomTabPanel value={value} index={2} style={{ minHeight: '800px', maxWidth: '873px', width: '100%' }}>
+          <CustomTabPanel value={value} index={2} style={Object.assign({}, style.minW800, style.tabPanel)}>
             <Interests />
           </CustomTabPanel>
         </Stack>
