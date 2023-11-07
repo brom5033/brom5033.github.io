@@ -4,6 +4,10 @@
   "license": "MIT",
   "version": "0.0.0",
   "type": "module",
+  "description": "포트폴리오 사이트입니다.",
+  "repository": "https://github.com/brom5033",
+  "homepage": "https://brom5033.github.io",
+  "author": "Minjeong Park <eslint@icloud.com>",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
