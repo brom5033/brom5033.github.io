@@ -1,10 +1,7 @@
 import { useState, type SyntheticEvent } from 'react';
 import { Stack, Box, Tabs, Tab } from '@mui/material';
-import { ColorSection } from '@components/atoms/ColorSection';
-import { CustomTabPanel } from '@components/molecules/CustomTabpanel';
-import { DevPhilosophy } from '@components/molecules/DevPhilosophy';
-import { CultureFit } from '@components/molecules/CultureFit';
-import { Interests } from '@components/molecules/Interests';
+import { ColorSection } from '@components/atoms';
+import { CustomTabPanel, DevPhilosophy, CultureFit, Interests } from '@components/molecules';
 
 const a11yProps = (index: number) => {
   return {

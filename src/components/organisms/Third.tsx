@@ -1,118 +1,124 @@
-import { ColorSection } from '@components/atoms/ColorSection';
-import { Grid, Stack, Button } from '@mui/material';
+import type { FC } from 'react';
+import { ColorSection } from '@components/atoms';
+import { Grid, Box, Stack, Typography, Button, Tooltip } from '@mui/material';
 
-const style = {
-  marginText: {
-    margin: '0px 8px',
-  },
-  itemCenter: {
-    justifyContent: 'center',
-    alignItems: 'center',
-  },
-} as const;
-
-export const Third = () => {
+export const Third: FC = () => {
   return (
-    <ColorSection color="#f7e057">
-      <Grid container sx={{ height: '100%' }}>
-        <Grid item xs={12} md={6} sx={{ height: '100%', backgroundColor: '#f7e057' }}>
-          <Stack sx={{ alignItems: 'center', height: '100%', justifyContent: 'center' }}>
-            <Stack
-              sx={{
-                height: '400px',
-                width: '300px',
-                borderRadius: '18px',
-                border: '3px solid rgba(0,0,0,0.2)',
-              }}
-            >
-              <img
-                src="/images/zoodiary.jpg"
-                alt="zoodiary"
-                width={294}
-                height={394}
-                style={{ borderRadius: '15px' }}
-              />
-            </Stack>
-            <Stack
-              sx={{
-                height: '400px',
-                width: '300px',
-                marginTop: '30px',
-                borderRadius: '18px',
-                border: '3px solid rgba(0,0,0,0.2)',
-              }}
-            >
-              <img src="/images/rozet.jpg" alt="rozet" width={294} height={394} style={{ borderRadius: '15px' }} />
+    <ColorSection color="#999a9d">
+      <Box
+        sx={{
+          backgroundColor: '#f7e057',
+          transform: 'rotate(-30deg) translate(-50%, -50%)',
+          overflow: 'hidden',
+          width: '200%',
+          height: '200%',
+          position: 'absolute',
+          top: '0%',
+          left: '-35%',
+        }}
+      />
+      <Grid
+        container
+        sx={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+        }}
+      >
+        <Grid item xs={12} md={6}>
+          <Stack gap="12px">
+            <img src="/images/zoodiary.jpg" width={250} height={300} style={{ margin: 'auto' }} />
+            <Typography variant="h4" color="#67676a" sx={{ fontWeight: 'bolder' }}>
+              Zoodiary
+            </Typography>
+            <Typography variant="body1" color="#6f6e68">
+              반려동물과 함께하는 일상을 공유하기
+            </Typography>
+            <Stack direction="row" gap="12px" sx={{ width: 'fit-content', margin: 'auto' }}>
+              <Tooltip title={<h3>자세한 프로젝트 내용은 readme에 작성했어요</h3>} placement="bottom" arrow>
+                <Button
+                  sx={{
+                    color: '#1c1c1c',
+                    border: '1px solid #1c1c1c',
+                    boxShadow: '2px 2px 2px 1px rgba(0, 0, 255, .2)',
+                  }}
+                  href="https://github.com/brom5033/ZooDiary"
+                  target="_blank"
+                >
+                  깃허브
+                </Button>
+              </Tooltip>
+              <Button
+                sx={{
+                  color: '#1c1c1c',
+                  border: '1px solid #1c1c1c',
+                  boxShadow: '2px 2px 2px 1px rgba(0, 0, 255, .2)',
+                }}
+                href="https://gaudy-baryonyx-7e4.notion.site/Zoo-Diary-8ae3a505ff5c47dabbd326e271dc2e29?pvs=4"
+                target="_blank"
+              >
+                노션
+              </Button>
+              <Button
+                sx={{
+                  color: '#1c1c1c',
+                  border: '1px solid #1c1c1c',
+                  boxShadow: '2px 2px 2px 1px rgba(0, 0, 255, .2)',
+                }}
+                href="https://www.figma.com/file/R3RnoAUBlLY1ASy45ME2C8/Zoo-Diary?type=design&t=BtTpILJgZXhtSuPj-6"
+                target="_blank"
+              >
+                피그마
+              </Button>
             </Stack>
           </Stack>
         </Grid>
-        <Grid
-          item
-          xs={12}
-          md={6}
-          sx={{ backgroundColor: '#999a9d', height: '100%', display: 'flex', alignItems: 'center' }}
-        >
-          <Stack spacing={5}>
-            <Stack spacing={1} sx={style.itemCenter}>
+        <Grid item xs={12} md={6}>
+          <Stack gap="12px">
+            <img src="/images/rozet.jpg" width={250} height={300} style={{ margin: 'auto' }} />
+            <Typography variant="h4" color="#f7e057" sx={{ fontWeight: 'bolder' }}>
+              Rozet
+            </Typography>
+            <Typography variant="body1" color="#f7e057">
+              타로카드로 오늘의 운세 보기
+            </Typography>
+            <Stack direction="row" gap="12px" sx={{ width: 'fit-content', margin: 'auto' }}>
+              <Tooltip title={<h3>자세한 프로젝트 내용은 readme에 작성했어요</h3>} placement="bottom" arrow>
+                <Button
+                  sx={{
+                    color: 'white',
+                    border: '1px solid white',
+                    boxShadow: '2px 2px 2px 1px rgba(0, 0, 255, .2)',
+                  }}
+                  href="https://github.com/brom5033/rozet"
+                  target="_blank"
+                >
+                  깃허브
+                </Button>
+              </Tooltip>
               <Button
-                sx={{ color: '#fff', border: '1px solid white' }}
-                href="https://brom5033.github.io/rozet/"
+                sx={{
+                  color: 'white',
+                  border: '1px solid white',
+                  boxShadow: '2px 2px 2px 1px rgba(0, 0, 255, .2)',
+                }}
+                href="https://gaudy-baryonyx-7e4.notion.site/Rozet-f430db6ee9044cd7a6c094e11c7edffb?pvs=4"
                 target="_blank"
               >
-                ZooDiary
+                노션
               </Button>
-              <Grid container sx={{ fontSize: '14px' }}>
-                <Grid item xs={3} sm={3}>
-                  <h3>[ zoodiary 소개 ]</h3> 반려동물의 하루를 기록하기 위한 일기장이에요. 반려동물의 하루를 기록하고,
-                  다른 사람들과 공유하며 추천을 누를 수 있어요.
-                </Grid>
-                <Grid xs={3} sm={3}>
-                  <h3>[ 제작하게 된 이유 ]</h3> 막연하게 무언가를 개발 하고 싶었지만 시중에 많이 나와있는 앱들을
-                  개발하고 개선점을 보완하여도 제가 만든 프로젝트가 과연 대중화 되있는 앱보다 활용도가 높을지
-                  고민해봤어요. 그러다 제가 키우는 강아지를 보며 다른 사람들과도 함께보면 좋지않을까? 하는 생각에 앱을
-                  찾아봤는데 반려동물 일기는 없기에 개발을 결심하게 됐어요.
-                </Grid>
-                <Grid xs={3} sm={3}>
-                  <h3>[ 기술스택 선정 이유 ]</h3> React를 사용 한 이유는 넓은 커뮤니티와 다양한 라이브러리를 사용할 수
-                  있기 때문이에요. 또한 완성도 높은 결과물을 위해 TypeScript 도 함께 사용했어요. 그리고 휴대폰 앱으로도
-                  사용할 수 있게 PWA를 적용 시켰고, pc화면에서의 대응도 가능 하도록 반응형으로 제작했어요.
-                </Grid>
-                <Grid xs={3} sm={3}>
-                  <h3>[ 느낀점 ]</h3> 처음으로 백엔드개발자와의 협업을 경험했어요. 중간에 cols오류 문서작성오류 등
-                  어려움이 있었지만 서로 소통하고 문제점을 개선하여 프로젝트를 완성 시켰어요.
-                </Grid>
-              </Grid>
-            </Stack>
-            <Stack spacing={1} sx={style.itemCenter}>
               <Button
-                sx={{ color: '#fff', border: '1px solid white' }}
-                href="https://brom5033.github.io/rozet/"
+                sx={{
+                  color: 'white',
+                  border: '1px solid white',
+                  boxShadow: '2px 2px 2px 1px rgba(0, 0, 255, .2)',
+                }}
+                href="https://www.figma.com/file/lrJ23tmQquC2itAwnH0pqZ/ROZET?type=design&t=BtTpILJgZXhtSuPj-6"
                 target="_blank"
               >
-                Rozet
+                피그마
               </Button>
-              <Grid container sx={{ fontSize: '14px' }}>
-                <Grid item xs={3} sm={3}>
-                  <h3>[ Rozet 소개 ]</h3> 귀여운 토끼 타로카드를 이용하여 하루 운세를 볼 수 있는 웹사이트에요. 카드를
-                  뽑고 카드의 의미를 확인할 수 있어요.
-                </Grid>
-                <Grid item xs={3} sm={3}>
-                  <h3>[ 제작하게된 이유 ]</h3> 한동안 코로나로 인해 집에서 머무는 시간이 많아졌어요. 그러다 타로카드
-                  라는 것을 알게 되었고 이 카드로 하루 운세를 볼 수 있다는 점이 좋았지만 카드를 구매하고 싶지 않았어요.
-                  그래서 카드를 구매하지 않고도 카드를 볼 수 있는 웹사이트를 만들어 보았어요.
-                </Grid>
-                <Grid item xs={3} sm={3}>
-                  <h3>[ 기술스택 선정이유 ]</h3> React와 JavaScript를 사용한 이유는 사이드 프로젝트에서 직접 기술을 사용
-                  해보고 싶었고, 또한 React를 사용하면서 더 많은 것을 배울 수 있을 것 같아서 선택했어요. TS를 사용하지
-                  않은 이유는 JS에 경험이 좀 더 필요하다고 느꼈기 때문이에요.
-                </Grid>
-                <Grid item xs={3} sm={3}>
-                  <h3>[ 느낀점 ]</h3> 타로카드 특성 상 카드의 그림과 해설 데이터가 많이 필요했고 이 문제를 해결하기 위해
-                  AI 주도 개발을 진행했어요. 카드 이미지는 스테이블디퓨전에서 모델을 사용하여 만들었고, 카드의 해설을
-                  Chat GPT를 사용하여 객체형태로 데이터를 만들었어요. 첫 사이드 프로젝트였어서 많이 아쉬웠지만, 앞으로
-                  더 많은 것을 배우고 더 좋은 결과물을 만들어 보고 싶어요.
-                </Grid>
-              </Grid>
             </Stack>
           </Stack>
         </Grid>

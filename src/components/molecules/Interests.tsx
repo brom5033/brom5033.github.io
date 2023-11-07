@@ -1,5 +1,5 @@
 import { Grid, Stack } from '@mui/material';
-import { GlassCard } from '@components/atoms/GlassCard';
+import { GlassCard } from '@components/atoms';
 import { TipsAndUpdates, TagFaces, Settings } from '@mui/icons-material';
 
 export const Interests = () => {

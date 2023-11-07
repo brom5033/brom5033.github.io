@@ -1,5 +1,5 @@
 import { Typography, Tooltip } from '@mui/material';
-import { ColorSection } from '@components/atoms/ColorSection';
+import { ColorSection } from '@components/atoms';
 
 export const First = () => {
   return (

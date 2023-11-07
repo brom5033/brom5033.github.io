@@ -1,5 +1,5 @@
 import { Grid, Stack } from '@mui/material';
-import { GlassCard } from '@components/atoms/GlassCard';
+import { GlassCard } from '@components/atoms';
 import { AutoFixHigh, Rule, Build } from '@mui/icons-material';
 
 export const DevPhilosophy = () => {
