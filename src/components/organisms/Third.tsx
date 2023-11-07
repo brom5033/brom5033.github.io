@@ -9,7 +9,7 @@ const style = {
     justifyContent: 'center',
     alignItems: 'center',
   },
-};
+} as const;
 
 export const Third = () => {
   return (

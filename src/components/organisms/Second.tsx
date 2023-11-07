@@ -52,7 +52,7 @@ const skillList = [
     comment: '스테이징된 파일만 검사해줘서 좋았어요.',
   },
   { skillName: 'Babel', src: 'https://babeljs.io/', comment: '최신 문법을 사용할 수 있었어요.' },
-];
+] as const;
 
 export const Second = () => {
   return (
