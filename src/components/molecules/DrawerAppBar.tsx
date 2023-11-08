@@ -92,10 +92,10 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
             </Typography>
             <Divider />
             <List>
-              {navItems.map((item) => (
-                <ListItem key={item.menuName} disablePadding component="a" href={item.src} target="_blank">
+              {navItems.map(({ menuName, src }) => (
+                <ListItem key={menuName} disablePadding component="a" href={src} target="_blank">
                   <ListItemButton sx={{ textAlign: 'center', color: 'black' }}>
-                    <ListItemText primary={item.menuName} />
+                    <ListItemText primary={menuName} />
                   </ListItemButton>
                 </ListItem>
               ))}
