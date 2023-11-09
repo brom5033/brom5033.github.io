@@ -13,6 +13,8 @@ typescript+swc, react, vite,  ESLint, prettier, commitLint, husky, emotion, fram
 ```bash
 yarn
 yarn dev
+// production
+yarn start
 ```
 
 ## Project structure
