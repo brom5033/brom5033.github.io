@@ -64,9 +64,9 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
             Minjeong Park
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map((item) => (
-              <Button key={item.menuName} href={item.src} target="_blank" sx={style.button}>
-                {item.menuName}
+            {navItems.map(({ menuName, src }) => (
+              <Button key={menuName} href={src} target="_blank" sx={style.button}>
+                {menuName}
               </Button>
             ))}
           </Box>

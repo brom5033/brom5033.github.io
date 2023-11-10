@@ -66,11 +66,11 @@ export const Second = () => {
           </Grid>
           <Grid item xs={12} sm={5}>
             <Grid container gap="8px">
-              {skillList.map((item) => {
+              {skillList.map(({ skillName, src, comment }) => {
                 return (
-                  <Tooltip key={item.skillName} title={<h3>{item.comment}</h3>} placement="top" arrow>
-                    <Button sx={{ color: '#fff', border: '1px solid white' }} href={item.src} target="_blank">
-                      {item.skillName}
+                  <Tooltip key={skillName} title={<h3>{comment}</h3>} placement="top" arrow>
+                    <Button sx={{ color: '#fff', border: '1px solid white' }} href={src} target="_blank">
+                      {skillName}
                     </Button>
                   </Tooltip>
                 );
