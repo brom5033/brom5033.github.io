@@ -13,7 +13,7 @@ import {
   Button,
   Toolbar,
 } from '@mui/material';
-import { Menu as MenuIcon } from '@mui/icons-material';
+import { Menu } from '@mui/icons-material';
 import { menuList } from '@constants/index';
 
 interface Props {
@@ -50,7 +50,7 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
             onClick={handleDrawerToggle}
             sx={{ color: 'white', mr: 2, display: { sm: 'none' } }}
           >
-            <MenuIcon />
+            <Menu />
           </IconButton>
           <Typography
             variant="h5"
