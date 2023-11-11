@@ -17,13 +17,26 @@ const style = {
     top: '55%',
     transform: 'translate(-50%,-10%)',
     width: '100%',
+    fontSize: {
+      xs: '1.9rem',
+      sm: '3.75rem',
+    },
   },
 } as const;
 
 export const First = () => {
   return (
     <ColorSection color="#BD3455">
-      <Typography component="h1" variant="h1">
+      <Typography
+        component="h1"
+        variant="h1"
+        sx={{
+          fontSize: {
+            xs: '3rem',
+            sm: '6rem',
+          },
+        }}
+      >
         FRONTEND
       </Typography>
       <Tooltip title={<h1>백엔드도 해볼까..</h1>} placement="top-end" arrow>

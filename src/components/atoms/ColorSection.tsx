@@ -4,15 +4,16 @@ import { Container } from '@mui/material';
 
 interface Props extends PropsWithChildren {
   color: string | string[];
+  mobileDoubleHeight?: boolean;
 }
 
-export const ColorSection: FC<Props> = ({ children, color }) => {
+export const ColorSection: FC<Props> = ({ children, color, mobileDoubleHeight }) => {
   const style = {
     container: {
       display: 'table',
       position: 'relative',
       color: 'white',
-      height: '100vh',
+      height: { xs: mobileDoubleHeight ? '200vh' : '100vh', sm: '100vh' },
       justifyContent: 'center',
       textAlign: 'center',
       overflow: 'hidden',

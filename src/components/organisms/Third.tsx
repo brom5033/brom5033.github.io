@@ -19,6 +19,7 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
+    margin: 'auto',
   },
   mAuto: {
     margin: 'auto',
@@ -40,9 +41,9 @@ const style = {
 
 export const Third: FC = () => {
   return (
-    <ColorSection color="#999a9d">
+    <ColorSection color="#999a9d" mobileDoubleHeight>
       <Box sx={style.yellowBox} />
-      <Grid container sx={style.grayBox}>
+      <Grid container sx={style.grayBox} rowSpacing={14}>
         <Grid item xs={12} md={6}>
           <Stack gap="12px">
             <motion.img
@@ -50,7 +51,7 @@ export const Third: FC = () => {
               width={250}
               height={300}
               style={style.mAuto}
-              initial={{ borderRadius: 15, border: 'none' }}
+              initial={{ borderRadius: 15, border: '0px' }}
               whileInView={{ border: '10px solid #999a9d' }}
               transition={{ duration: 0.5, delay: 0.5 }}
             />
@@ -100,14 +101,14 @@ export const Third: FC = () => {
               width={250}
               height={300}
               style={style.mAuto}
-              initial={{ borderRadius: 15, border: 'none' }}
+              initial={{ borderRadius: 15, border: '0px' }}
               whileInView={{ border: '10px solid #f7e057' }}
               transition={{ duration: 0.5, delay: 0.5 }}
             />
             <Typography variant="h4" color="#f7e057" sx={{ fontWeight: 'bolder' }}>
               Rozet
             </Typography>
-            <Typography variant="body1" color="#f7e057">
+            <Typography variant="body1" sx={{ color: { xs: '#fff', sm: '#f7e057' } }}>
               타로카드로 오늘의 운세 보기
             </Typography>
             <Stack direction="row" gap="12px" sx={Object.assign({}, style.mAuto, style.wFitContent)}>
