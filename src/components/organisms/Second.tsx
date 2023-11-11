@@ -1,5 +1,5 @@
-import { ColorSection } from '@components/atoms';
 import { Typography, Grid, Tooltip, Button } from '@mui/material';
+import { ColorSection } from '@components/atoms';
 import { skillList } from '@constants/index';
 
 export const Second = () => {

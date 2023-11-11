@@ -1,6 +1,6 @@
 import { Grid, Stack } from '@mui/material';
-import { GlassCard } from '@components/atoms';
 import { TipsAndUpdates, TagFaces, Settings } from '@mui/icons-material';
+import { GlassCard } from '@components/atoms';
 
 const style = {
   w100: {

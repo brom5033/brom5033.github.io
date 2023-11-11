@@ -1,6 +1,6 @@
 import { Grid, Stack } from '@mui/material';
-import { GlassCard } from '@components/atoms';
 import { AutoFixHigh, Rule, Build } from '@mui/icons-material';
+import { GlassCard } from '@components/atoms';
 
 const style = {
   text: {

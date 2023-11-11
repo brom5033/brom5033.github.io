@@ -1,6 +1,6 @@
 import type { FC } from 'react';
-import { ColorSection } from '@components/atoms';
 import { Grid, Box, Stack, Typography, Button, Tooltip } from '@mui/material';
+import { ColorSection } from '@components/atoms';
 
 const style = {
   yellowBox: {
