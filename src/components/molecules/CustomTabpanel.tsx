@@ -1,8 +1,7 @@
-import type { CSSProperties } from 'react';
+import type { CSSProperties, PropsWithChildren } from 'react';
 import { Box } from '@mui/material';
 
-interface TabPanelProps {
-  children?: React.ReactNode;
+interface TabPanelProps extends PropsWithChildren {
   index: number;
   value: number;
   style?: CSSProperties;
