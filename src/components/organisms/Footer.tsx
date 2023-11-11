@@ -10,7 +10,7 @@ const style = {
   },
   link: {
     textDecoration: 'none',
-    color: '#0af',
+    color: '#f7e057',
     marginRight: '3px',
   },
 } as const;

@@ -67,19 +67,40 @@ export const DevPhilosophy = () => {
       <Grid item xs={5} sx={{ display: { xs: 'none', sm: 'flex' } }}>
         <Stack gap={4}>
           <Stack>
-            <img src="/images/commit-rules.png" alt="" width="100%" height={190} style={style.imageBorderRadius} />
+            <picture>
+              <source srcSet="/images/commit-rules.webp" type="image/webp" />
+              <img
+                src="/images/commit-rules.png"
+                alt="커밋룰 예시"
+                width="100%"
+                height={190}
+                style={style.imageBorderRadius}
+              />
+            </picture>
           </Stack>
           <Stack>
-            <img
-              src="/images/coding-conventions.png"
-              alt=""
-              width="100%"
-              height={195}
-              style={style.imageBorderRadius}
-            />
+            <picture>
+              <source srcSet="/images/coding-conventions.webp" type="image/webp" />
+              <img
+                src="/images/coding-conventions.png"
+                alt="컨벤션 예시"
+                width="100%"
+                height={195}
+                style={style.imageBorderRadius}
+              />
+            </picture>
           </Stack>
           <Stack>
-            <img src="/images/refactoring1.png" alt="" width="100%" height={192} style={style.imageBorderRadius} />
+            <picture>
+              <source srcSet="/images/refactoring1.webp" type="image/webp" />
+              <img
+                src="/images/refactoring1.png"
+                alt="리팩토링 예시"
+                width="100%"
+                height={192}
+                style={style.imageBorderRadius}
+              />
+            </picture>
           </Stack>
         </Stack>
       </Grid>

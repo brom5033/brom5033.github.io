@@ -46,16 +46,20 @@ export const Third: FC = () => {
       <Grid container sx={style.grayBox} rowSpacing={14}>
         <Grid item xs={12} md={6}>
           <Stack gap="12px">
-            <motion.img
-              src="/images/zoodiary.jpg"
-              width={250}
-              height={300}
-              style={style.mAuto}
-              initial={{ borderRadius: 15, border: '0px' }}
-              whileInView={{ border: '10px solid #999a9d' }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            />
-            <Typography variant="h4" color="#67676a" sx={{ fontWeight: 'bolder' }}>
+            <picture>
+              <source srcSet="/images/zoodiary.webp" type="image/webp" />
+              <motion.img
+                src="/images/zoodiary.jpg"
+                alt="zoodiary"
+                width={250}
+                height={300}
+                style={style.mAuto}
+                initial={{ borderRadius: 15, border: '0px' }}
+                whileInView={{ border: '10px solid #999a9d' }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              />
+            </picture>
+            <Typography component="h3" variant="h4" color="#67676a" sx={{ fontWeight: 'bolder' }}>
               Zoodiary
             </Typography>
             <Typography variant="body1" color="#6f6e68">
@@ -96,16 +100,20 @@ export const Third: FC = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Stack gap="12px">
-            <motion.img
-              src="/images/rozet.jpg"
-              width={250}
-              height={300}
-              style={style.mAuto}
-              initial={{ borderRadius: 15, border: '0px' }}
-              whileInView={{ border: '10px solid #f7e057' }}
-              transition={{ duration: 0.5, delay: 0.5 }}
-            />
-            <Typography variant="h4" color="#f7e057" sx={{ fontWeight: 'bolder' }}>
+            <picture>
+              <source srcSet="/images/rozet.webp" type="image/webp" />
+              <motion.img
+                src="/images/rozet.jpg"
+                alt="rozet"
+                width={250}
+                height={300}
+                style={style.mAuto}
+                initial={{ borderRadius: 15, border: '0px' }}
+                whileInView={{ border: '10px solid #f7e057' }}
+                transition={{ duration: 0.5, delay: 0.5 }}
+              />
+            </picture>
+            <Typography component="h3" variant="h4" color="#f7e057" sx={{ fontWeight: 'bolder' }}>
               Rozet
             </Typography>
             <Typography variant="body1" sx={{ color: { xs: '#fff', sm: '#f7e057' } }}>

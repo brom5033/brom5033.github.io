@@ -40,7 +40,10 @@ export const First = () => {
         FRONTEND
       </Typography>
       <Tooltip title={<h1>백엔드도 해볼까..</h1>} placement="top-end" arrow>
-        <img src="/images/myImage.png" alt="백엔드도 해볼까.." style={style.image} />
+        <picture>
+          <source srcSet="/images/myImage.webp" type="image/webp" />
+          <img src="/images/myImage.png" alt="백엔드도 해볼까.." style={style.image} />
+        </picture>
       </Tooltip>
       <Typography component="h2" variant="h2" sx={style.h2}>
         <motion.span
