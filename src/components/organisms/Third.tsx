@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { Grid, Box, Stack, Typography, Button, Tooltip } from '@mui/material';
+import { motion } from 'framer-motion';
 import { ColorSection } from '@components/atoms';
 
 const style = {
@@ -44,7 +45,15 @@ export const Third: FC = () => {
       <Grid container sx={style.grayBox}>
         <Grid item xs={12} md={6}>
           <Stack gap="12px">
-            <img src="/images/zoodiary.jpg" width={250} height={300} style={style.mAuto} />
+            <motion.img
+              src="/images/zoodiary.jpg"
+              width={250}
+              height={300}
+              style={style.mAuto}
+              initial={{ borderRadius: 15, border: 'none' }}
+              whileInView={{ border: '10px solid #999a9d' }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            />
             <Typography variant="h4" color="#67676a" sx={{ fontWeight: 'bolder' }}>
               Zoodiary
             </Typography>
@@ -53,11 +62,19 @@ export const Third: FC = () => {
             </Typography>
             <Stack direction="row" gap="12px" sx={Object.assign({}, style.mAuto, style.wFitContent)}>
               <Tooltip title={<h3>자세한 프로젝트 내용은 readme에 작성했어요</h3>} placement="bottom" arrow>
-                <Button sx={style.blackButton} href="https://github.com/brom5033/ZooDiary" target="_blank">
+                <Button
+                  component={motion.a}
+                  whileHover={{ scale: 1.1 }}
+                  sx={style.blackButton}
+                  href="https://github.com/brom5033/ZooDiary"
+                  target="_blank"
+                >
                   깃허브
                 </Button>
               </Tooltip>
               <Button
+                component={motion.a}
+                whileHover={{ scale: 1.1 }}
                 sx={style.blackButton}
                 href="https://gaudy-baryonyx-7e4.notion.site/Zoo-Diary-8ae3a505ff5c47dabbd326e271dc2e29?pvs=4"
                 target="_blank"
@@ -65,6 +82,8 @@ export const Third: FC = () => {
                 노션
               </Button>
               <Button
+                component={motion.a}
+                whileHover={{ scale: 1.1 }}
                 sx={style.blackButton}
                 href="https://www.figma.com/file/R3RnoAUBlLY1ASy45ME2C8/Zoo-Diary?type=design&t=BtTpILJgZXhtSuPj-6"
                 target="_blank"
@@ -76,7 +95,15 @@ export const Third: FC = () => {
         </Grid>
         <Grid item xs={12} md={6}>
           <Stack gap="12px">
-            <img src="/images/rozet.jpg" width={250} height={300} style={style.mAuto} />
+            <motion.img
+              src="/images/rozet.jpg"
+              width={250}
+              height={300}
+              style={style.mAuto}
+              initial={{ borderRadius: 15, border: 'none' }}
+              whileInView={{ border: '10px solid #f7e057' }}
+              transition={{ duration: 0.5, delay: 0.5 }}
+            />
             <Typography variant="h4" color="#f7e057" sx={{ fontWeight: 'bolder' }}>
               Rozet
             </Typography>
@@ -85,11 +112,19 @@ export const Third: FC = () => {
             </Typography>
             <Stack direction="row" gap="12px" sx={Object.assign({}, style.mAuto, style.wFitContent)}>
               <Tooltip title={<h3>자세한 프로젝트 내용은 readme에 작성했어요</h3>} placement="bottom" arrow>
-                <Button sx={style.whiteButton} href="https://github.com/brom5033/rozet" target="_blank">
+                <Button
+                  component={motion.a}
+                  whileHover={{ scale: 1.1 }}
+                  sx={style.whiteButton}
+                  href="https://github.com/brom5033/rozet"
+                  target="_blank"
+                >
                   깃허브
                 </Button>
               </Tooltip>
               <Button
+                component={motion.a}
+                whileHover={{ scale: 1.1 }}
                 sx={style.whiteButton}
                 href="https://gaudy-baryonyx-7e4.notion.site/Rozet-f430db6ee9044cd7a6c094e11c7edffb?pvs=4"
                 target="_blank"
@@ -97,6 +132,8 @@ export const Third: FC = () => {
                 노션
               </Button>
               <Button
+                component={motion.a}
+                whileHover={{ scale: 1.1 }}
                 sx={style.whiteButton}
                 href="https://www.figma.com/file/lrJ23tmQquC2itAwnH0pqZ/ROZET?type=design&t=BtTpILJgZXhtSuPj-6"
                 target="_blank"

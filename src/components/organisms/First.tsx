@@ -1,4 +1,5 @@
 import { Typography, Tooltip } from '@mui/material';
+import { motion } from 'framer-motion';
 import { ColorSection } from '@components/atoms';
 
 const style = {
@@ -29,7 +30,17 @@ export const First = () => {
         <img src="/images/myImage.png" alt="백엔드도 해볼까.." style={style.image} />
       </Tooltip>
       <Typography component="h2" variant="h2" sx={style.h2}>
-        <span style={{ color: '#f7e057' }}>개발자 박민정</span>이에요
+        <motion.span
+          style={{
+            textShadow:
+              ' 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #f7e057,0 0 92px #f7e057, 0 0 102px #f7e057, 0 0 112px #f7e057, 0 0 161px #f7e057',
+          }}
+          animate={{ color: ['#bc7f7f', '#f19c9c'] }}
+          transition={{ duration: 0.5, repeat: Infinity, repeatType: 'reverse' }}
+        >
+          개발자 박민정
+        </motion.span>
+        이에요
       </Typography>
     </ColorSection>
   );

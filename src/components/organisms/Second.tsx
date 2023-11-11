@@ -1,4 +1,5 @@
 import { Typography, Grid, Tooltip, Button } from '@mui/material';
+import { motion } from 'framer-motion';
 import { ColorSection } from '@components/atoms';
 import { skillList } from '@constants/index';
 
@@ -17,7 +18,19 @@ export const Second = () => {
               {skillList.map(({ skillName, src, comment }) => {
                 return (
                   <Tooltip key={skillName} title={<h3>{comment}</h3>} placement="top" arrow>
-                    <Button sx={{ color: '#fff', border: '1px solid white' }} href={src} target="_blank">
+                    <Button
+                      component={motion.a}
+                      // random background color
+                      whileHover={{
+                        scale: 1.1,
+                        backgroundColor: `rgba(${Math.random() * 255}, ${Math.random() * 255}, ${
+                          Math.random() * 255
+                        }, 0.5)`,
+                      }}
+                      sx={{ color: '#fff', border: '1px solid white' }}
+                      href={src}
+                      target="_blank"
+                    >
                       {skillName}
                     </Button>
                   </Tooltip>
