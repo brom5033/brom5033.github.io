@@ -14,17 +14,13 @@ import {
   Toolbar,
 } from '@mui/material';
 import { Menu as MenuIcon } from '@mui/icons-material';
+import { menuList } from '@constants/index';
 
 interface Props {
   window?: () => Window;
 }
 
 const drawerWidth = 240;
-const navItems = [
-  { menuName: 'github', src: 'https://github.com/brom5033' },
-  { menuName: 'notion', src: 'https://gaudy-baryonyx-7e4.notion.site/Link-18bb1ee21c4f4dfc91fbf4575033ff96?pvs=4' },
-  { menuName: 'email', src: 'mailto:eslint@icloud.com' },
-] as const;
 
 const style = {
   button: {
@@ -64,7 +60,7 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
             Minjeong Park
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            {navItems.map(({ menuName, src }) => (
+            {menuList.map(({ menuName, src }) => (
               <Button key={menuName} href={src} target="_blank" sx={style.button}>
                 {menuName}
               </Button>
@@ -92,7 +88,7 @@ export const DrawerAppBar: FC<Props> = ({ window }) => {
             </Typography>
             <Divider />
             <List>
-              {navItems.map(({ menuName, src }) => (
+              {menuList.map(({ menuName, src }) => (
                 <ListItem key={menuName} disablePadding component="a" href={src} target="_blank">
                   <ListItemButton sx={{ textAlign: 'center', color: 'black' }}>
                     <ListItemText primary={menuName} />
