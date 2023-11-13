@@ -66,6 +66,15 @@ export const Third: FC = () => {
               반려동물과 함께하는 일상을 공유하기
             </Typography>
             <Stack direction="row" gap="12px" sx={Object.assign({}, style.mAuto, style.wFitContent)}>
+              <Button
+                component={motion.a}
+                whileHover={{ scale: 1.1 }}
+                sx={style.blackButton}
+                href="http://zoodiary.kro.kr/"
+                target="_blank"
+              >
+                바로가기
+              </Button>
               <Tooltip title={<h3>자세한 프로젝트 내용은 readme에 작성했어요</h3>} placement="bottom" arrow>
                 <Button
                   component={motion.a}
@@ -120,6 +129,15 @@ export const Third: FC = () => {
               타로카드로 오늘의 운세 보기
             </Typography>
             <Stack direction="row" gap="12px" sx={Object.assign({}, style.mAuto, style.wFitContent)}>
+              <Button
+                component={motion.a}
+                whileHover={{ scale: 1.1 }}
+                sx={style.whiteButton}
+                href="https://brom5033.github.io/rozet/"
+                target="_blank"
+              >
+                바로가기
+              </Button>
               <Tooltip title={<h3>자세한 프로젝트 내용은 readme에 작성했어요</h3>} placement="bottom" arrow>
                 <Button
                   component={motion.a}
