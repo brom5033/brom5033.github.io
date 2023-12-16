@@ -73,7 +73,7 @@ export const Third: FC = () => {
                 href="http://zoodiary.kro.kr/"
                 target="_blank"
               >
-                바로가기
+                WebSite
               </Button>
               <Tooltip title={<h3>자세한 프로젝트 내용은 readme에 작성했어요</h3>} placement="bottom" arrow>
                 <Button
@@ -83,7 +83,7 @@ export const Third: FC = () => {
                   href="https://github.com/brom5033/ZooDiary"
                   target="_blank"
                 >
-                  깃허브
+                  GitHub
                 </Button>
               </Tooltip>
               <Button
@@ -93,7 +93,7 @@ export const Third: FC = () => {
                 href="https://gaudy-baryonyx-7e4.notion.site/Zoo-Diary-8ae3a505ff5c47dabbd326e271dc2e29?pvs=4"
                 target="_blank"
               >
-                노션
+                Notion
               </Button>
               <Button
                 component={motion.a}
@@ -102,7 +102,7 @@ export const Third: FC = () => {
                 href="https://www.figma.com/file/R3RnoAUBlLY1ASy45ME2C8/Zoo-Diary?type=design&t=BtTpILJgZXhtSuPj-6"
                 target="_blank"
               >
-                피그마
+                Figma
               </Button>
             </Stack>
           </Stack>
@@ -136,7 +136,7 @@ export const Third: FC = () => {
                 href="https://brom5033.github.io/rozet/"
                 target="_blank"
               >
-                바로가기
+                WebSite
               </Button>
               <Tooltip title={<h3>자세한 프로젝트 내용은 readme에 작성했어요</h3>} placement="bottom" arrow>
                 <Button
@@ -146,7 +146,7 @@ export const Third: FC = () => {
                   href="https://github.com/brom5033/rozet"
                   target="_blank"
                 >
-                  깃허브
+                  GitHub
                 </Button>
               </Tooltip>
               <Button
@@ -156,7 +156,7 @@ export const Third: FC = () => {
                 href="https://gaudy-baryonyx-7e4.notion.site/Rozet-f430db6ee9044cd7a6c094e11c7edffb?pvs=4"
                 target="_blank"
               >
-                노션
+                Notion
               </Button>
               <Button
                 component={motion.a}
@@ -165,7 +165,7 @@ export const Third: FC = () => {
                 href="https://www.figma.com/file/lrJ23tmQquC2itAwnH0pqZ/ROZET?type=design&t=BtTpILJgZXhtSuPj-6"
                 target="_blank"
               >
-                피그마
+                Figma
               </Button>
             </Stack>
           </Stack>
