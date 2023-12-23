@@ -1,4 +1,4 @@
-import type { CSSProperties, PropsWithChildren } from 'react';
+import type { FC, CSSProperties, PropsWithChildren } from 'react';
 import { Box } from '@mui/material';
 
 interface TabPanelProps extends PropsWithChildren {
@@ -7,7 +7,7 @@ interface TabPanelProps extends PropsWithChildren {
   style?: CSSProperties;
 }
 
-export const CustomTabPanel = (props: TabPanelProps) => {
+export const CustomTabPanel: FC<TabPanelProps> = (props: TabPanelProps) => {
   const { children, value, index, ...other } = props;
 
   return (

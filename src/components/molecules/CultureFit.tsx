@@ -1,3 +1,4 @@
+import type { FC } from 'react';
 import { Grid, Stack } from '@mui/material';
 import { TipsAndUpdates, TagFaces, Settings } from '@mui/icons-material';
 import { GlassCard } from '@components/atoms';
@@ -18,7 +19,7 @@ const style = {
   },
 } as const;
 
-export const CultureFit = () => {
+export const CultureFit: FC = () => {
   return (
     <Grid container sx={style.w100}>
       <Grid item xs={12} sx={style.w100}>
