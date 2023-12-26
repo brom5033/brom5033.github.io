@@ -1,3 +1,4 @@
+import type { FC } from 'react';
 import { Container } from '@mui/material';
 
 const style = {
@@ -15,7 +16,7 @@ const style = {
   },
 } as const;
 
-export const Footer = () => {
+export const Footer: FC = () => {
   return (
     <Container component="footer" sx={style.container}>
       <a

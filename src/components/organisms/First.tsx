@@ -1,3 +1,4 @@
+import type { FC } from 'react';
 import { Typography, Tooltip } from '@mui/material';
 import { motion } from 'framer-motion';
 import { ColorSection } from '@components/atoms';
@@ -24,7 +25,7 @@ const style = {
   },
 } as const;
 
-export const First = () => {
+export const First: FC = () => {
   return (
     <ColorSection color="#BD3455">
       <Typography

@@ -1,9 +1,10 @@
+import type { FC } from 'react';
 import { Typography, Grid, Tooltip, Button } from '@mui/material';
 import { motion } from 'framer-motion';
 import { ColorSection } from '@components/atoms';
 import { skillList } from '@constants/index';
 
-export const Second = () => {
+export const Second: FC = () => {
   return (
     <ColorSection color="#5D5DA8">
       <div>

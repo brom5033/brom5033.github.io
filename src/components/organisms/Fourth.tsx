@@ -1,4 +1,4 @@
-import { useState, type SyntheticEvent } from 'react';
+import { useState, type SyntheticEvent, type FC } from 'react';
 import { Stack, Box, Tabs, Tab } from '@mui/material';
 import { ColorSection } from '@components/atoms';
 import { CustomTabPanel, DevPhilosophy, CultureFit, Interests } from '@components/molecules';
@@ -18,7 +18,7 @@ const style = {
   },
 } as const;
 
-export const Fourth = () => {
+export const Fourth: FC = () => {
   const [value, setValue] = useState(0);
 
   const handleChange = (_event: SyntheticEvent, newValue: number) => {
