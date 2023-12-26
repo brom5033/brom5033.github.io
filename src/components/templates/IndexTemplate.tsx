@@ -1,6 +1,7 @@
+import type { FC } from 'react';
 import { First, Second, Third, Fourth } from '@components/organisms';
 
-export const IndexTemplate = () => {
+export const IndexTemplate: FC = () => {
   return (
     <>
       <First />
